@@ -23,6 +23,8 @@ Let's see how they play
  * Make the scripts executable. eg. `chmod +x run_night_job`
  * Run it `ruby xxx.rb` or create cronjob (see below)
 
+To run a single deck do `RUN_SINGLE=true ruby good_magic_code.rb`
+
 ## Cronjob
 
 
@@ -30,3 +32,7 @@ Add a cron job
  * run `crontab -e` (under the user to run the code)
  * Add this entry:
    `0 3 * * * /home/veggie/src/good_magic/run_night_job`
+
+To see the current cron jobs run: `crontab  -l`
+
+To get help type `man 5 crontab`

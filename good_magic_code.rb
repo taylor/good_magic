@@ -56,7 +56,6 @@ decks.each{ |deck|
    results << [card, response.body]
    puts card
    puts response.body
-
  }
 
  unless Dir.exist?('output')
@@ -65,6 +64,6 @@ decks.each{ |deck|
 
  #creates new file with deck name and date
  File.open("output/#{deck_title}_#{Time.now.month}_#{Time.now.day}_#{Time.now.year}.xml", "w") do |f|
-   f.puts results.each{|record| puts "#{record.first}=>#{record.last}" }
+   results.each{|record| f.puts "#{record.first}\n#{record.last}" }
  end
 }
