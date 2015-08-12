@@ -91,3 +91,4 @@ taglist.zip
 .*.swn
 npm-debug.log
 frontend/config/environment-local.js
+output/*

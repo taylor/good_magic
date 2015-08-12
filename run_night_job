@@ -8,4 +8,5 @@ appdir=$(readlink -f "$mydir/")
 cd $appdir
 . .env
 #exec rails s -b 0.0.0.0 -p $RAILS_PORT 
-exec ruby good_magic_code.rb
+#exec ruby good_magic_code.rb
+exec ruby single_card.rb
