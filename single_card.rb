@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 require 'net/http'
+require 'openssl'
 
 
 uri = URI.parse("http://partner.tcgplayer.com/x3/phl.asmx/p")
