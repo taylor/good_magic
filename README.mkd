@@ -1,0 +1,32 @@
+# Rationally Good Magic Decisions
+
+Let's see how they play
+
+
+## Setup
+
+ * Install Ruby (see http://rvm.io)
+   - curl ...
+   - rvm install ruby
+ * Create .env
+   - copy the example and then edit
+   ```
+    cp .env.example .env
+    $EDITOR .env
+   ```
+   - add your partner key
+ * Load the environment file: `. .env`
+
+## Run the code
+
+ * Make sure env is setup
+ * Make the scripts executable. eg. `chmod +x run_night_job`
+ * Run it `ruby xxx.rb` or create cronjob (see below)
+
+## Cronjob
+
+
+Add a cron job
+ * run `crontab -e` (under the user to run the code)
+ * Add this entry:
+   `0 3 * * * /home/veggie/src/good_magic/run_night_job`

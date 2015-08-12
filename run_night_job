@@ -1,0 +1,11 @@
+#!/bin/bash -l
+
+me=$(basename $0)
+mydir=$(dirname $(readlink -f $0))
+#appdir=$(readlink -f "$mydir/../")
+appdir=$(readlink -f "$mydir/")
+
+cd $appdir
+. .env
+#exec rails s -b 0.0.0.0 -p $RAILS_PORT 
+exec ruby good_magic_code.rb
