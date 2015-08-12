@@ -1,3 +1,5 @@
+SINGLE = [ "Akroan Jailer" ]
+
 MORIGINS = [
   "Akroan Jailer",
   "Ampryn Tactician",

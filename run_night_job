@@ -5,8 +5,9 @@ mydir=$(dirname $(readlink -f $0))
 #appdir=$(readlink -f "$mydir/../")
 appdir=$(readlink -f "$mydir/")
 
+D=$(date +%Y%m%d-%H%M)
 cd $appdir
 . .env
 #exec rails s -b 0.0.0.0 -p $RAILS_PORT 
-#exec ruby good_magic_code.rb
-exec ruby single_card.rb
+exec ruby good_magic_code.rb > logs/good-magic-$D.log
+#exec ruby single_card.rb

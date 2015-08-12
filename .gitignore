@@ -92,3 +92,4 @@ taglist.zip
 npm-debug.log
 frontend/config/environment-local.js
 output/*
+logs/*
